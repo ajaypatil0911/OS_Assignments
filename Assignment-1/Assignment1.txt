@@ -1,0 +1,184 @@
+Question 1:
+
+B.
+cdac@DESKTOP-U0PFJ6O:~$ cd LinuxAssignment
+cdac@DESKTOP-U0PFJ6O:~/LinuxAssignment$ ls
+file1.txt
+
+
+
+C.
+cdac@DESKTOP-U0PFJ6O:~/LinuxAssignment$ mkdir docs
+cdac@DESKTOP-U0PFJ6O:~/LinuxAssignment$ ls
+docs  file1.txt
+
+
+
+D:  a.
+
+cdac@DESKTOP-U0PFJ6O:~/LinuxAssignment$ cp file1.txt docs/file2.txt
+cdac@DESKTOP-U0PFJ6O:~/LinuxAssignment$ ls
+docs  file1.txt
+cdac@DESKTOP-U0PFJ6O:~/LinuxAssignment$ cd docs
+cdac@DESKTOP-U0PFJ6O:~/LinuxAssignment/docs$ ls
+file2.txt
+
+
+
+
+F: a.
+
+cdac@DESKTOP-U0PFJ6O:~$ ls ~/LinuxAssignment
+docs  file1.txt
+
+
+
+
+G: a.
+
+cdac@DESKTOP-U0PFJ6O:~$ find . -type f -name "*.txt"
+./cdac/file2.txt
+./cdac/colors.txt
+./cdac/file3.txt
+./cdac/file1.txt
+./cdac/numbers.txt
+./LinuxAssignment/docs/file2.txt
+./LinuxAssignment/file1.txt
+./docs/file2.txt
+
+ 
+   b.
+   
+   cdac@DESKTOP-U0PFJ6O:~$ grep "Kharghar" info.txt
+   Hello CDAC Kharghar
+   
+   
+H:  a.
+  
+  cdac@DESKTOP-U0PFJ6O:~$ date
+  Tue Aug 19 14:14:41 UTC 2025
+  
+  
+ 
+
+
+ 
+  
+Question 2:
+
+A:
+cdac@DESKTOP-U0PFJ6O:~$ head data.txt
+my name is ajay
+i am 22 years old
+i live in bhusawal.
+i am a student
+there are four members in my family.
+i am a bright student.
+my favourite subject is maths.
+i am very punctual.
+i am very discipline.
+i get up early in morning.
+
+
+
+
+
+B:
+cdac@DESKTOP-U0PFJ6O:~$ tail -5 data.txt
+my favourite subject is maths.
+i am very punctual.
+i am very discipline.
+i get up early in morning.
+i respect all my elders.
+
+
+
+
+C:
+cdac@DESKTOP-U0PFJ6O:~$ head -n 15 numbers.txt
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+
+
+
+
+
+D:
+cdac@DESKTOP-U0PFJ6O:~$ tail -3 numbers.txt
+15
+16
+17
+
+
+
+
+E:
+cdac@DESKTOP-U0PFJ6O:~$ tr 'a-z' 'A-Z' < input.txt > output.txt
+cdac@DESKTOP-U0PFJ6O:~$ cat output.txt
+MY NAME IS AJAY
+ENGLISH IS LANGUAGE
+THAT IS WIDELY SPOKEN
+AND
+AROUND THE WORLD
+IT IS ALSO
+ONE OF THE
+MOST IMPORTANT
+SUBJECT IN SCHOOL
+WRITE ENGLISH ESSAY
+ENGLISH HELP ME TO
+EXPRESS MY THOUGHT
+
+
+
+
+
+F:
+cdac@DESKTOP-U0PFJ6O:~$ cat > duplicate.txt
+red
+blue
+yellow
+violet
+green
+red
+yellow
+purple
+
+cdac@DESKTOP-U0PFJ6O:~$ sort duplicate.txt | uniq
+blue
+green
+purple
+red
+violet
+yellow
+
+
+
+
+G:
+cdac@DESKTOP-U0PFJ6O:~$ cat > fruit.txt
+apple
+banana
+apple
+orange
+banana
+apple
+^C
+cdac@DESKTOP-U0PFJ6O:~$ sort fruit.txt | uniq -c
+      3 apple
+      2 banana
+      1 orange
+
+   
